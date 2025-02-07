@@ -4,7 +4,7 @@ import os
 import asyncio
 
 # Get the token from environment variables (for security)
-TOKEN = os.getenv("7507479675:AAGnbw9YuMi6q9V0DUuWsK6DYuEKKJwju0U")
+TOKEN = os.getenv("BOT_TOKEN")
 
 # List of usernames to send the messages
 usernames = ['Tech_Shreyansh29', 'abhirai23']
