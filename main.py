@@ -32,6 +32,8 @@ async def main():
     print("Bot is starting...")
     await application.run_polling()
 
-# Run the bot
+# ✅ Fix for Koyeb (Prevents "event loop is already running" error)
 if __name__ == '__main__':
-    asyncio.run(main())
+    loop = asyncio.get_event_loop()
+    loop.create_task(main())  # Run the bot without closing the loop
+    loop.run_forever()
